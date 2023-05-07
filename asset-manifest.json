@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/WebFilm/static/css/main.7d66e9fb.css",
+    "main.js": "/WebFilm/static/js/main.96956b48.js",
+    "static/js/787.f72e8720.chunk.js": "/WebFilm/static/js/787.f72e8720.chunk.js",
+    "static/media/avatar_default.jpg": "/WebFilm/static/media/avatar_default.8c6cc66d5821565caf21.jpg",
+    "static/media/loading.gif": "/WebFilm/static/media/loading.493e36f0aed1630828cd.gif",
+    "static/media/defaultImg.jpg": "/WebFilm/static/media/defaultImg.4ddba6dd2760ad0e0f89.jpg",
+    "index.html": "/WebFilm/index.html",
+    "main.7d66e9fb.css.map": "/WebFilm/static/css/main.7d66e9fb.css.map",
+    "main.96956b48.js.map": "/WebFilm/static/js/main.96956b48.js.map",
+    "787.f72e8720.chunk.js.map": "/WebFilm/static/js/787.f72e8720.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d66e9fb.css",
+    "static/js/main.96956b48.js"
+  ]
+}
