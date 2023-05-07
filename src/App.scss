@@ -1,0 +1,164 @@
+@use "./scss/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    @include tablet{
+        font-size: 80%;
+    }
+    @include mobile {
+        font-size: 60%;
+    }
+}
+
+body {
+    font-family: $font-family;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: $body-bg;
+    color: $txt-color;
+    @include mobile {
+        margin-bottom: 3rem;
+    }
+}
+a {
+    text-decoration: none;
+    color:unset;
+}
+
+@media (hover: hover) {
+    a:hover {
+        color: $main-color;
+    }
+}
+
+button,
+input {
+    outline: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+img {
+    min-width: 100%;
+}
+
+iframe{
+    border: 0;
+}
+
+.container {
+    max-width: 1660px;
+    margin: auto;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.section {
+    padding: 0 2rem;
+}
+
+.section__header {
+    @include flex(center, space-between)
+}
+.btn{
+    font-family: "montserrat" !important;
+}
+
+.main_content {
+    margin-top: 4.5rem;
+}
+.light {
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+    position: relative;
+    .text_color {
+        color: black !important;
+        a {
+            color: black;
+        }
+    }
+    .hover_color {
+        &:hover {
+            cursor: pointer;
+            background-color:rgba(#000000, 0.25)
+        }
+    }
+}
+
+.dark {
+    background-color: black;
+    z-index: 10;
+    position: relative;
+    .text_color {
+        color: white !important;
+        a {
+            color: white;
+        }
+    }
+    .hover_color {
+        &:hover {
+            background-color: rgba(#ffffff, 0.25);
+            cursor: pointer;
+        }
+    }
+}
+
+.search {
+    margin-top: 4.65rem;
+    min-height: 100vh;
+    .form {
+        padding: 0 7rem;
+        .dark {
+            .form-control {
+                color:white;
+            }
+        }
+        .light {
+            .form-control {
+                color: black;
+            }
+        }
+        input {
+            background-color: transparent;
+        }
+    }
+    .tabItem {
+        border-radius: 5px;
+        display: inline-block;
+        &:hover {
+            background-color: rgba(#dc3545, 0.5);
+            cursor: pointer;
+        }
+    }
+    .active_tab {
+        background-color: #dc3545;
+    }
+}
+
+.title{
+    h4{
+        margin-bottom: -0.5rem;
+        font-weight: 700;
+    }
+    .line{
+        width: 6rem;
+        height: 6px;
+        background-color: red;
+        display: inline-block;
+    }
+}
