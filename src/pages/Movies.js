@@ -15,10 +15,6 @@ function Movies (){
         dispatch(getMoviesUpcoming());
         dispatch(getMoviesTopRate());
         dispatch(getMoviesPopular());
-        // if(!(moviesPopular.length && moviesTopRate.length)) {
-        //     dispatch(getMoviesTopRate());
-        //     dispatch(getMoviesPopular());
-        // }
     }, [dispatch])
 
     useEffect(() => {

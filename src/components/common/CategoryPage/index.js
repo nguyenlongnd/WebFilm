@@ -1,7 +1,7 @@
 import SliderList from "../SliderList"
 import FilmItem from "../FilmItem"
 import loading from "../../../assets/images/loading.gif"
-
+import "./index.scss"
 import { useState } from "react"
 function CategoryPage({title, listSlide, category, onChangeType, listData, activeType,onHandleLoadmore, loadStatus = false}) {
     const [currentPage, setCurrentPage] = useState(1)
@@ -57,7 +57,7 @@ function CategoryPage({title, listSlide, category, onChangeType, listData, activ
                         onClick={() => handleLoadMore()}
                     >
                         {loadStatus ? 
-                        <img className="ms-2" width="35px" height= "35px" src={loading} alt="loadingImg"/> 
+                        <img className="ms-2 icon-loading" src={loading} alt="loadingImg"/> 
                         :"LOAD MORE"
                         }
                     </button>

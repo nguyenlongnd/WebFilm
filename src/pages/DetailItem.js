@@ -217,7 +217,7 @@ function DetailItem() {
                                     <Swiper
                                         className="listSwiper mySwiper"
                                         slidesPerView={4}
-                                        spaceBetween={5}
+                                        spaceBetween={10}
                                         navigation={true}
                                         modules={[Navigation]}
                                     >
@@ -272,7 +272,8 @@ function DetailItem() {
                                     </div>
                                     <Swiper
                                         className="listSwiper mySwiper"
-                                        slidesPerView={5}
+                                        spaceBetween={10}
+                                        slidesPerView={4}
                                         navigation={true}
                                         modules={[Navigation]}
                                     >

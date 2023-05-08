@@ -18,10 +18,12 @@ function Footer(props) {
     const {themeMode} = useContext(ThemeContext);
     return (
         <div className={`footer px-4 py-4 d-flex justify-content-between ${themeMode.name}`}>
+            <Link to="/">
             <span className='logo'>
                 <span className='text_color'>Sun</span>
                 <span style={{color:"red"}}>Star</span>
             </span>
+            </Link>
             <ul className='d-flex align-items-center text_color'>
                 {listMenu.map((item,idx) =>
                     <li 
