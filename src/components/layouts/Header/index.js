@@ -16,21 +16,18 @@ function Header(props) {
     return(
         <div className={`header d-flex justify-content-between px-4 py-3 mb-5 ${themeMode.name}`}>
             <div className="left d-flex align-items-center">
-                <Link to={`/`}>
+                <NavLink to={`/`}>
                 <span className="logo">
                     <span className="text_color">Sun</span>
                     <span style={{color: "red"}}>Star</span>
                 </span>
-                </Link>
+                </NavLink>
                 <span className="menu">
                     <ul className="d-flex align-items-center text_color">
                         {listMenu.map((item, idx) =>
                             <li key={idx}>
                                 <NavLink 
-                                    //activeClassName='active_menu' 
-                                    //className= {(navData) => (navData.isActive ? "active_menu" : 'none')}
                                     className={`menu_item mx-3 p-2 ${(navData) => (navData.isActive ? "active_menu" : 'none')}`}
-                                    //className="menu_item mx-3 p-2"
                                     to={`/${item.path}`}
                                 >{item.name?.toUpperCase()}
                                 </NavLink>
